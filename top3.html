@@ -2,39 +2,77 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <title>Топ-3 по времени</title>
+  <title>Топ-3 Время</title>
   <style>
     body {
       margin: 0;
-      padding: 20px;
+      padding: 0;
       background: rgba(0, 0, 0, 0);
-      font-family: "Segoe UI", sans-serif;
-      font-size: 28px;
-      line-height: 1.8;
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 32px;
+      font-weight: 500;
+      color: white;
     }
-    .top {
-      border-radius: 16px;
-      padding: 25px 35px;
-      background: rgba(0, 0, 0, 0.7); /* чуть более тёмный */
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-      width: fit-content;
+
+    .top3 {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      padding: 20px 30px;
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0); /* полностью прозрачный */
+      text-align: left;
     }
+
     .item {
-      margin-bottom: 12px;
-      text-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+      text-shadow: 0 0 10px rgba(255,255,255,0.6), 0 0 20px rgba(0,0,0,0.6);
     }
-    .gold { color: #ffd700; font-weight: bold; }
-    .silver { color: #d0d0d0; }
-    .bronze { color: #e3963e; }
+
+    .gold {
+      color: #ffe600;
+      font-weight: 700;
+    }
+
+    .silver {
+      color: #bfbfbf;
+    }
+
+    .bronze {
+      color: #ffa950;
+    }
+
+    .rank {
+      margin-right: 10px;
+      font-size: 30px;
+      filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.3));
+    }
+
+    .name {
+      font-weight: 600;
+    }
+
+    .time {
+      margin-left: 5px;
+      font-weight: 400;
+      font-size: 24px;
+      opacity: 0.9;
+    }
   </style>
 </head>
 <body>
-  <div class="top">
-    <div class="item gold">🥇 Ленивый тусовщик — 2.92 ч</div>
-    <div class="item silver">🥈 Mrs. Crazy — 2.67 ч</div>
-    <div class="item bronze">🥉 VASiA — 2.58 ч</div>
+  <div class="top3">
+    <div class="item gold">
+      <span class="rank">🥇</span><span class="name">Ленивый тусовщик</span><span class="time">— 2.92 ч</span>
+    </div>
+    <div class="item silver">
+      <span class="rank">🥈</span><span class="name">Mrs. Crazy</span><span class="time">— 2.67 ч</span>
+    </div>
+    <div class="item bronze">
+      <span class="rank">🥉</span><span class="name">VASiA</span><span class="time">— 2.58 ч</span>
+    </div>
   </div>
 </body>
 </html>
+
 
 
