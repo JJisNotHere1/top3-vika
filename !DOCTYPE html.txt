@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Топ-3</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.0); /* прозрачный фон */
+      color: white;
+      font-family: "Segoe UI", sans-serif;
+      font-size: 28px;
+      line-height: 1.8;
+    }
+    .top {
+      border-radius: 12px;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 10px #000;
+      width: fit-content;
+    }
+    .item {
+      margin-bottom: 10px;
+    }
+    .gold { color: gold; font-weight: bold; }
+    .silver { color: #c0c0c0; }
+    .bronze { color: #cd7f32; }
+  </style>
+</head>
+<body>
+  <div class="top">
+    <div class="item gold">🥇 Ленивый тусовщик — 70 очков</div>
+    <div class="item silver">🥈 Mrs. Crazy — 64 очка</div>
+    <div class="item bronze">🥉 VASiA — 62 очка</div>
+  </div>
+</body>
+</html>
